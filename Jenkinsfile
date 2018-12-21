@@ -20,6 +20,8 @@ pipeline
        }
    
        }
+  post { always{ emailext attachmentsPattern: 'dependency-check-report.csv', body: '', subject: 'owasp', to: 'narambhatla.mahathi@chubb.com'
+               }}
 }
 
            
