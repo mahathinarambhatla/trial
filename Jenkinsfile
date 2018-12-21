@@ -33,14 +33,5 @@ pipeline
 }
 
            
-              }
-            }
-    stage ('OWASP Publish')
-    {
-         steps
-         {
-         dependencyCheckPublisher canComputeNew: false, defaultEncoding: '', failedTotalHigh: '1', healthy: '', pattern: '', thresholdLimit: 'high', unHealthy: '', unstableTotalHigh: '1'
-         }
-       }
-       }
-}
+    
+    
